@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8" />
+    <title>תכנות 3 - שיעור API</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/javascript_openai.js"></script>
+</head>
+<body>
+
+    <!-- Main content -->
+    <main>
+        <section>
+            <h1>
+                Experience Design
+            </h1>
+        </section>
+    </main>
+
+    <!-- Container for the form -->
+    <div id="container" class="container">
+        <!-- Labels and select dropdown for subject and language -->
+        <label for="subject" class="subjecttitle">Choose a Subject:</label>
+        <select id="subject" class="form-select mb-3">
+            <option value="human-centered design">human-centered design</option>
+            <option value="Interaction design">Interaction design</option>
+            <option value="Emotional Design">Emotional Design</option>
+        </select>
+
+        <label for="language" class="languagetitle">Choose a Language:</label>
+        <select name="language" id="language" class="form-select mb-3">
+            <option value="English">English</option>
+            <option value="Hebrew">Hebrew</option>
+            <option value="French">French</option>
+        </select>
+
+        <!-- Container for questions -->
+        <div id="question" class="list-group mb-3">
+        </div>
+        <!-- Container for questions (to be populated) -->
+        <div id="questionsContainer" class="mb-3 questionCont">
+            Questions will be populated here
+        </div>
+
+
+        <!-- Button to generate questions -->
+        <button id="generate-question" class="btn btn-primary mb-3 generatebtn" onclick="getQuestion()">Generate Question</button>
+
+
+        <!-- Container for the finish button -->
+        <div id="buttonContainer">
+            <button id="finish-button" style="display: none;" class="btn btn-primary finishbtn" onclick="finishQuiz()">Finish</button>
+        </div>
+
+        <!-- Container for questions (to be populated) -->
+        <div id="questionsContainer" class="mb-3 questionCont">
+            Questions will be populated here
+        </div> 
+    </div>
+</body>
+</html>

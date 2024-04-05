@@ -1,0 +1,163 @@
+﻿body {
+    background-image: url('../images/bg4.jpg');
+    background-size: cover;
+}
+
+main {
+
+}
+/*title*/
+main section h1 {
+    text-align: center;
+    color: #051E32;
+    font-family:Poppins;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    
+}
+
+
+.container {
+    text-align: left !important;
+    font-family: Poppins;
+    font-size:15px;
+    font-weight: bold;
+    display:block;
+}
+
+.mb-3 {
+    font-family: Calibri;
+    font-size: 20px;
+
+}
+
+.questionCont {
+    background-color: rgb(255, 255, 255, 0.40); 
+    border-radius: 10px;
+    padding: 20px;
+    display: none;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.subjecttitle {
+    text-align: left;
+    font-size: 30px;
+}
+
+.languagetitle {
+    font-size: 30px;
+    text-align: left;
+}
+
+.generatebtn{
+    text-align: center !important;
+    font-family:Calibri;
+    margin: 0 auto; /* Center the button horizontally */
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    width: 15rem;
+}
+.generatebtn:disabled {
+    background-color: #7b96b0; /* Change background color */
+    color: #ececec; /* Change text color */
+    cursor: not-allowed;
+    border-color: #7b96b0;
+}
+
+.finishbtn {
+    text-align: center;
+    margin: 0 auto; /* Center the button horizontally */
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    width: 15rem;
+}
+
+.finishbtn:disabled {
+    background-color: #7b96b0; /* Change background color */
+    color: #ececec; /* Change text color */
+    cursor: not-allowed;
+    border-color: #7b96b0;
+}
+.correct-answer {
+    color: forestgreen;
+}
+.wrong-answer {
+    color: #e20000;
+}
+
+.answersList {
+    list-style-type: none;
+    margin-block-start: 0;
+}
+
+/*<---------------------------------------------------SECOND PAGE-------------------------------------------------->*/
+.actContainer {
+    text-align: center;
+}
+
+.acth1 {
+    text-align: center;
+    color: #051E32;
+    font-family: Poppins;
+    font-size: 60px;
+    font-weight: 700;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.actbutton {
+    font-size:30px;
+    padding: 20px 100px 20px 100px;
+    background-color: dodgerblue;
+    border-color: dodgerblue;
+    border-radius:20px;
+}
+
+.actdiv {
+    text-align: center;
+    font-family: Poppins;
+    padding: 20px;
+    font-size: 35px;
+    font-weight: 900;
+}
+
+
+
+
+
+
+/* For mobile screens */
+@media only screen and (max-width: 600px) {
+    /* Adjustments for the main section */
+    main section h1 {
+        font-size: 40px; 
+    }
+
+    /* Adjustments for container */
+    .container {
+        font-size: 12px; 
+    }
+
+    /* Adjustments for buttons */
+    .generatebtn,
+    .finishbtn {
+        width: 100%;
+        padding: 15px; 
+        font-size: 18px; 
+    }
+
+    /* Adjustments for question container */
+    .questionCont {
+        padding: 15px; 
+        font-size: 16px; 
+    }
+
+    /* Adjustments for subject and language titles */
+    .subjecttitle,
+    .languagetitle {
+        font-size: 24px; 
+    }
+}
